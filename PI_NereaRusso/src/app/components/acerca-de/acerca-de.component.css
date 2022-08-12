@@ -18,7 +18,7 @@ h1 {
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: 3px 3px 10px gray;
         left: 2%;
         top: 650px;
     }
@@ -29,7 +29,7 @@ h1 {
         position: absolute;
         width: 30%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px gray;
+        box-shadow: 3px 3px 10px gray;
         left: 35%;
         top: 650px;
     }
