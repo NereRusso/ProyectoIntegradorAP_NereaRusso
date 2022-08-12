@@ -1,3 +1,49 @@
+.row {
+    margin: 0;
+    background-color: bisque;
+    padding: 25px;
+}
+
 #logoAP {
     width: 150px;
+}
+
+.redes img{
+    width: 45px;
+    margin: 5px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    margin-right: 5px;
+}
+
+.btn {
+    background-color: black;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Para la vista de celular */
+
+@media (max-width: 715px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .redes img {
+        margin: 50px 5px;
+    }
+
+    #logoAP {
+        width: 190px;
+    }
 }
