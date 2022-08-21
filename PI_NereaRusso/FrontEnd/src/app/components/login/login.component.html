@@ -12,20 +12,18 @@
                   <h4 class="mt-1 mb-5 pb-1"></h4>
                 </div>
 
+                <p id="subtitulo">Por favor, ingresa con tu cuenta</p>
+
                 <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
-                  <p id="subtitulo">Por favor, ingresa con tu cuenta</p>
-
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="nombreUsuario">Nombre de usuario</label>
-                    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control" 
-                      placeholder="Dirección de correo electrónico" [(ngModel)]="nombreUsuario" name="nombreUsuario" required/>
-
+                    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control"
+                      placeholder="Dirección de correo electrónico" [(ngModel)]="nombreUsuario" required />
+                      <label class="form-label" for="nombreUsuario">Nombre de usuario</label>
                   </div>
 
                   <div class="form-outline mb-4">
+                    <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" required />
                     <label class="form-label" for="password">Contraseña</label>
-                    <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password" name="password" required/>
-
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1">

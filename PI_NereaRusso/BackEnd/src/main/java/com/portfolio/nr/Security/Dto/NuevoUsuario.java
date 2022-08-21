@@ -3,7 +3,6 @@ package com.portfolio.nr.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
-
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
@@ -11,7 +10,7 @@ public class NuevoUsuario {
     private String password;
     private Set<String> roles = new HashSet<>();
     
-    //Getters y Setters 
+    //Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -51,4 +50,5 @@ public class NuevoUsuario {
     public void setRoles(Set<String> roles) {
         this.roles = roles;
     }
+    
 }
