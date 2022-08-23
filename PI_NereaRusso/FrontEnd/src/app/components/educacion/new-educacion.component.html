@@ -3,14 +3,14 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Nombre de la Empresa</label>
+                    <label for="nombreE">Nombre de la Institución</label>
                     <input type="text" class="dorm-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripción de la tarea</label>
+                    <label for="descripcionE">Descripción de sus estudios</label>
                     <input type="text" class="dorm-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
-                <button class="btn btn-outline-dark">Agregar Experiencia</button>
+                <button class="btn btn-outline-dark">Agregar Educación</button>
             </form>
         </div>
     </div>
