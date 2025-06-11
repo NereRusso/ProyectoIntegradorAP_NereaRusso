@@ -1,14 +1,17 @@
 <div class="row">
     <h3>Experiencia laboral</h3>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-outline-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
+        <button type="button" class="btn btn-outline-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva
+            Experiencia</button>
     </div>
     <div class="col lg 1"></div>
     <div class="col-lg-10">
         <table class="table">
             <tbody>
                 <tr *ngForm="let Experiencia of expe">
-                    <td><h4>{{Experiencia.nombreE}}</h4></td>
+                    <td>
+                        <h4>{{Experiencia.nombreE}}</h4>
+                    </td>
                     <td>{{Experiencia.descripcionE}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-outline-secondary" routerLink="/editexp/{{Experiencia.id}}">

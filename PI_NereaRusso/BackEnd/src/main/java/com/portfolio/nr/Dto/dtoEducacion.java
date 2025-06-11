@@ -3,6 +3,7 @@ package com.portfolio.nr.Dto;
 import javax.validation.constraints.NotBlank;
 
 public class dtoEducacion {
+
     @NotBlank
     private String nombreE;
     @NotBlank
@@ -31,6 +32,5 @@ public class dtoEducacion {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
-    
+
 }

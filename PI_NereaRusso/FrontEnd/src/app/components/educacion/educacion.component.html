@@ -1,14 +1,17 @@
 <div class="row">
     <h3>Educación</h3>
     <div class="col-lg-2">
-        <button type="button" class="btn btn-outline-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educación</button>
+        <button type="button" class="btn btn-outline-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar
+            Educación</button>
     </div>
     <div class="col lg 1"></div>
     <div class="col-lg-10">
         <table class="table">
             <tbody>
                 <tr *ngForm="let Educacion of educacion">
-                    <td><h4>{{Educacion.nombreE}}</h4></td>
+                    <td>
+                        <h4>{{Educacion.nombreE}}</h4>
+                    </td>
                     <td>{{Educacion.descripcionE}}</td>
                     <td *ngIf="isLogged">
                         <button class="btn btn-outline-secondary" routerLink="/editedu/{{Educacion.id}}">

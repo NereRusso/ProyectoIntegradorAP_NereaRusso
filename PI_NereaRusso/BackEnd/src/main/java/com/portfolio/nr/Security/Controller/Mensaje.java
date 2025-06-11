@@ -1,8 +1,9 @@
 package com.portfolio.nr.Security.Controller;
 
 public class Mensaje {
+
     private String mensaje;
-    
+
     //Constructores
     public Mensaje() {
     }
@@ -10,7 +11,7 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
+
     //Getters y Setters
     public String getMensaje() {
         return mensaje;
@@ -19,5 +20,5 @@ public class Mensaje {
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    
+
 }
